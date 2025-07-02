@@ -6,6 +6,7 @@ import theaterRoute from './routes/theater';
 import movieRoute from './routes/movie';
 import roomRoute from './routes/room';
 import seatRoute from './routes/seat';
+import authRoute from './routes/auth';
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 dbConnect();
 
 // Routes
+app.use('/api/auth', authRoute);
 app.use('/api/theater', theaterRoute);
 app.use('/api/movie', movieRoute);
 app.use('/api/room', roomRoute);
