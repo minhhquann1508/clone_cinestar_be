@@ -1,0 +1,27 @@
+# test api ở đây
+# get
+# GET http://localhost:5050/api/movie
+# GET http://localhost:5050/api/movie/:id
+
+# GET http://localhost:5050/api/:id
+# GET http://localhost:5050/api/all-room/:theaterId
+
+# post
+POST http://localhost:5050/api/movie
+Content-Type: application/json
+
+{
+  "title": "BÍ KÍP LUYỆN RỒNG",
+  "description": "Câu chuyện về một chàng trai trẻ với ước mơ trở thành thợ săn rồng, nhưng định mệnh lại đưa đẩy anh đến tình bạn bất ngờ với một chú rồng.",
+  "duration": 100,
+  "rating": 8.5,
+  "trailerUrl": "",
+  "genres": ["Hoạt hình", "Phiêu lưu"],
+  "directors": ["DreamWorks"],
+  "actors": ["Jack Black"],
+  "country": "USA",
+  "lang": "Phụ đề",
+  "releaseDate": "2025-07-01",
+  "startDate": "2025-07-02",
+  "endDate": "2025-07-30",
+}
